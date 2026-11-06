@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main, "cursor/**"]
+  pull_request:
+
+jobs:
+  protocol-linux:
+    name: PlaydeckProtocol (Swift on Linux, if available)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for Swift toolchain
+        id: swift
+        run: |
+          if command -v swift >/dev/null 2>&1; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+            swift --version
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "Swift toolchain not installed on this runner."
+            echo "PlaydeckProtocol can be validated with: swift test"
+            echo "Full PlaydeckMac / PlaydeckiOS builds require macOS + Xcode."
+          fi
+
+      - name: swift test
+        if: steps.swift.outputs.present == 'true'
+        run: swift test --package-path .
+
+      - name: Scaffold sanity check
+        run: |
+          test -f Package.swift
+          test -f Packages/PlaydeckProtocol/Package.swift
+          test -f Playdeck.xcodeproj/project.pbxproj
+          test -f Apps/PlaydeckMac/Sources/PlaydeckMacApp.swift
+          test -f Apps/PlaydeckiOS/Sources/PlaydeckiOSApp.swift
+          test -f README.md
+          echo "Scaffold layout OK (app compile needs macOS/Xcode)."
+
+  # Uncomment / enable on a macOS runner when available:
+  # apps-macos:
+  #   name: Apps (Xcode)
+  #   runs-on: macos-14
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Build Mac helper
+  #       run: xcodebuild -project Playdeck.xcodeproj -scheme PlaydeckMac -destination 'platform=macOS' build
+  #     - name: Build iOS (simulator)
+  #       run: xcodebuild -project Playdeck.xcodeproj -scheme PlaydeckiOS -destination 'platform=iOS Simulator,name=iPhone 16' build
