@@ -105,7 +105,8 @@ public final class FramedJSONReader: @unchecked Sendable {
                     PlaydeckEnvelope.self,
                     from: buffer
                 )
-                buffer.removeFirst(consumed)
+                // Prefer dropFirst + copy: Data.removeFirst crashes on some Linux Foundation builds.
+                buffer = Data(buffer.dropFirst(consumed))
                 messages.append(value)
             } catch FramedJSONError.truncatedHeader, FramedJSONError.truncatedPayload {
                 break

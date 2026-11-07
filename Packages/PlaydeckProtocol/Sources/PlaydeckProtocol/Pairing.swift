@@ -119,14 +119,16 @@ public struct PairingSessionStub: Sendable {
 /// Placeholder for Sign in with Apple + CloudKit layout sync.
 /// Real AuthenticationServices / CloudKit wiring lives in the iOS app target.
 public protocol CloudKitAccountStubbing: Sendable {
-    var isSignedIn: Bool { get }
+    var isSignedIn: Bool { get async }
     func signInWithAppleStub() async throws
     func syncLayoutsStub(_ layouts: [DeckLayout]) async throws
     func fetchLayoutsStub() async throws -> [DeckLayout]
 }
 
 public struct LocalOnlyAccountStub: CloudKitAccountStubbing {
-    public var isSignedIn: Bool { false }
+    public var isSignedIn: Bool {
+        get async { false }
+    }
 
     public init() {}
 
