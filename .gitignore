@@ -1,0 +1,31 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.playground
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/PlaydeckProtocol/.build/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Signing / secrets
+*.p12
+*.mobileprovision
+AuthKey_*.p8
+
+# IDE
+.idea/
+*.swp
+*~

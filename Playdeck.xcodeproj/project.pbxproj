@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* PlaydeckMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* PlaydeckMacApp.swift */; };
+		A10000000000000000000002 /* MacAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* MacAppModel.swift */; };
+		A10000000000000000000003 /* MacMenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* MacMenuBarView.swift */; };
+		A10000000000000000000004 /* MacSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* MacSettingsView.swift */; };
+		A10000000000000000000005 /* BonjourAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* BonjourAdvertiser.swift */; };
+		A10000000000000000000006 /* AccessibilityHelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* AccessibilityHelloWorld.swift */; };
+		A10000000000000000000007 /* USBModeSuggestMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* USBModeSuggestMonitor.swift */; };
+		A10000000000000000000008 /* PlaydeckProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = A80000000000000000000001 /* PlaydeckProtocol */; };
+		A10000000000000000000011 /* PlaydeckiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* PlaydeckiOSApp.swift */; };
+		A10000000000000000000012 /* PhoneAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* PhoneAppModel.swift */; };
+		A10000000000000000000013 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* RootView.swift */; };
+		A10000000000000000000014 /* DeckGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* DeckGridView.swift */; };
+		A10000000000000000000015 /* RideShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* RideShellView.swift */; };
+		A10000000000000000000016 /* PairingSettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* PairingSettingsSection.swift */; };
+		A10000000000000000000017 /* PlaydeckProtocol in Frameworks */ = {isa = PBXBuildFile; productRef = A80000000000000000000002 /* PlaydeckProtocol */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* PlaydeckMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaydeckMacApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* MacAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* MacMenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacMenuBarView.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* MacSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacSettingsView.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* BonjourAdvertiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourAdvertiser.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* AccessibilityHelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityHelloWorld.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* USBModeSuggestMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBModeSuggestMonitor.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000009 /* PlaydeckMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlaydeckMac.entitlements; sourceTree = "<group>"; };
+		A2000000000000000000000A /* PlaydeckMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaydeckMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000011 /* PlaydeckiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaydeckiOSApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000012 /* PhoneAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAppModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* DeckGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckGridView.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* RideShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideShellView.swift; sourceTree = "<group>"; };
+		A20000000000000000000016 /* PairingSettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairingSettingsSection.swift; sourceTree = "<group>"; };
+		A20000000000000000000018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000019 /* PlaydeckiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlaydeckiOS.entitlements; sourceTree = "<group>"; };
+		A2000000000000000000001A /* PlaydeckiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaydeckiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000008 /* PlaydeckProtocol in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000017 /* PlaydeckProtocol in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* Apps */,
+				A40000000000000000000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000003 /* PlaydeckMac */,
+				A40000000000000000000006 /* PlaydeckiOS */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* PlaydeckMac */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000004 /* Sources */,
+				A40000000000000000000005 /* Resources */,
+			);
+			path = PlaydeckMac;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* PlaydeckMacApp.swift */,
+				A20000000000000000000002 /* MacAppModel.swift */,
+				A20000000000000000000003 /* MacMenuBarView.swift */,
+				A20000000000000000000004 /* MacSettingsView.swift */,
+				A20000000000000000000005 /* BonjourAdvertiser.swift */,
+				A20000000000000000000006 /* AccessibilityHelloWorld.swift */,
+				A20000000000000000000007 /* USBModeSuggestMonitor.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000008 /* Info.plist */,
+				A20000000000000000000009 /* PlaydeckMac.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* PlaydeckiOS */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000007 /* Sources */,
+				A40000000000000000000008 /* Resources */,
+			);
+			path = PlaydeckiOS;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000011 /* PlaydeckiOSApp.swift */,
+				A20000000000000000000012 /* PhoneAppModel.swift */,
+				A20000000000000000000013 /* RootView.swift */,
+				A20000000000000000000014 /* DeckGridView.swift */,
+				A20000000000000000000015 /* RideShellView.swift */,
+				A20000000000000000000016 /* PairingSettingsSection.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000018 /* Info.plist */,
+				A20000000000000000000019 /* PlaydeckiOS.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000A /* PlaydeckMac.app */,
+				A2000000000000000000001A /* PlaydeckiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* PlaydeckMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000000000000000000003 /* Build configuration list for PBXNativeTarget "PlaydeckMac" */;
+			buildPhases = (
+				A60000000000000000000001 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaydeckMac;
+			packageProductDependencies = (
+				A80000000000000000000001 /* PlaydeckProtocol */,
+			);
+			productName = PlaydeckMac;
+			productReference = A2000000000000000000000A /* PlaydeckMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50000000000000000000002 /* PlaydeckiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000000000000000000004 /* Build configuration list for PBXNativeTarget "PlaydeckiOS" */;
+			buildPhases = (
+				A60000000000000000000002 /* Sources */,
+				A30000000000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaydeckiOS;
+			packageProductDependencies = (
+				A80000000000000000000002 /* PlaydeckProtocol */,
+			);
+			productName = PlaydeckiOS;
+			productReference = A2000000000000000000001A /* PlaydeckiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A50000000000000000000002 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A70000000000000000000001 /* Build configuration list for PBXProject "Playdeck" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000000000000000000001;
+			packageReferences = (
+				AA0000000000000000000001 /* XCLocalSwiftPackageReference "Packages/PlaydeckProtocol" */,
+			);
+			productRefGroup = A40000000000000000000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* PlaydeckMac */,
+				A50000000000000000000002 /* PlaydeckiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A60000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* PlaydeckMacApp.swift in Sources */,
+				A10000000000000000000002 /* MacAppModel.swift in Sources */,
+				A10000000000000000000003 /* MacMenuBarView.swift in Sources */,
+				A10000000000000000000004 /* MacSettingsView.swift in Sources */,
+				A10000000000000000000005 /* BonjourAdvertiser.swift in Sources */,
+				A10000000000000000000006 /* AccessibilityHelloWorld.swift in Sources */,
+				A10000000000000000000007 /* USBModeSuggestMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000011 /* PlaydeckiOSApp.swift in Sources */,
+				A10000000000000000000012 /* PhoneAppModel.swift in Sources */,
+				A10000000000000000000013 /* RootView.swift in Sources */,
+				A10000000000000000000014 /* DeckGridView.swift in Sources */,
+				A10000000000000000000015 /* RideShellView.swift in Sources */,
+				A10000000000000000000016 /* PairingSettingsSection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB0000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB0000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AB0000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Apps/PlaydeckMac/Resources/PlaydeckMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PlaydeckMac/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playdeck.mac;
+				PRODUCT_NAME = Playdeck;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AB0000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Apps/PlaydeckMac/Resources/PlaydeckMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PlaydeckMac/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.playdeck.mac;
+				PRODUCT_NAME = Playdeck;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AB0000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Apps/PlaydeckiOS/Resources/PlaydeckiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PlaydeckiOS/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.playdeck.ios;
+				PRODUCT_NAME = Playdeck;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB0000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Apps/PlaydeckiOS/Resources/PlaydeckiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Apps/PlaydeckiOS/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.playdeck.ios;
+				PRODUCT_NAME = Playdeck;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000000000000000000001 /* Build configuration list for PBXProject "Playdeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000000000000000000001 /* Debug */,
+				AB0000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000000000000000000003 /* Build configuration list for PBXNativeTarget "PlaydeckMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000000000000000000003 /* Debug */,
+				AB0000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000000000000000000004 /* Build configuration list for PBXNativeTarget "PlaydeckiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000000000000000000005 /* Debug */,
+				AB0000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AA0000000000000000000001 /* XCLocalSwiftPackageReference "Packages/PlaydeckProtocol" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PlaydeckProtocol;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A80000000000000000000001 /* PlaydeckProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PlaydeckProtocol;
+		};
+		A80000000000000000000002 /* PlaydeckProtocol */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PlaydeckProtocol;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A90000000000000000000001 /* Project object */;
+}

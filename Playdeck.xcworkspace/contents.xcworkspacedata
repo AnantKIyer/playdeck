@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Playdeck.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Packages/PlaydeckProtocol">
+   </FileRef>
+   <FileRef
+      location = "container:Package.swift">
+   </FileRef>
+</Workspace>

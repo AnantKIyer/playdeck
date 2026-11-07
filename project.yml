@@ -1,0 +1,74 @@
+# XcodeGen manifest — run `xcodegen generate` on macOS to refresh Playdeck.xcodeproj.
+name: Playdeck
+options:
+  bundleIdPrefix: com.playdeck
+  deploymentTarget:
+    iOS: "17.0"
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  BASE_SDK: auto
+  SWIFT_VERSION: "5.9"
+packages:
+  PlaydeckProtocol:
+    path: Packages/PlaydeckProtocol
+targets:
+  PlaydeckMac:
+    type: application
+    platform: macOS
+    sources:
+      - path: Apps/PlaydeckMac/Sources
+    resources: []
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.playdeck.mac
+      PRODUCT_NAME: Playdeck
+      INFOPLIST_FILE: Apps/PlaydeckMac/Resources/Info.plist
+      CODE_SIGN_ENTITLEMENTS: Apps/PlaydeckMac/Resources/PlaydeckMac.entitlements
+      LD_RUNPATH_SEARCH_PATHS: ["@executable_path/../Frameworks"]
+      GENERATE_INFOPLIST_FILE: false
+      MACOSX_DEPLOYMENT_TARGET: "14.0"
+      ASSETCATALOG_COMPILER_APPICON_NAME: ""
+    dependencies:
+      - package: PlaydeckProtocol
+        product: PlaydeckProtocol
+    info:
+      path: Apps/PlaydeckMac/Resources/Info.plist
+      properties:
+        LSUIElement: true
+  PlaydeckiOS:
+    type: application
+    platform: iOS
+    sources:
+      - path: Apps/PlaydeckiOS/Sources
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.playdeck.ios
+      PRODUCT_NAME: Playdeck
+      INFOPLIST_FILE: Apps/PlaydeckiOS/Resources/Info.plist
+      CODE_SIGN_ENTITLEMENTS: Apps/PlaydeckiOS/Resources/PlaydeckiOS.entitlements
+      TARGETED_DEVICE_FAMILY: "1,2"
+      GENERATE_INFOPLIST_FILE: false
+      IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    dependencies:
+      - package: PlaydeckProtocol
+        product: PlaydeckProtocol
+    info:
+      path: Apps/PlaydeckiOS/Resources/Info.plist
+schemes:
+  PlaydeckMac:
+    build:
+      targets:
+        PlaydeckMac: all
+    run:
+      config: Debug
+  PlaydeckiOS:
+    build:
+      targets:
+        PlaydeckiOS: all
+    run:
+      config: Debug
+  PlaydeckProtocol:
+    build:
+      targets: {}
+    test:
+      config: Debug
+      targets: []
